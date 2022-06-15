@@ -1,0 +1,55 @@
+body {
+  margin: 0; 
+  background-color: #3a3a3c;
+}
+
+#board {
+  margin: 75px auto;
+  padding: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 375px;
+  height: fit-content;
+  background-color: #00568f;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: fit-content;
+  margin: 5px 0;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #00568f;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: #3a3a3c;
+  cursor: pointer;
+}
+
+.cell-red {
+  background-color: #de002b;
+  cursor: auto;
+}
+
+.cell-yellow {
+  background-color: #fcbb2c;
+  cursor: auto;
+}
+
+#winner {
+  font-size: 32px;
+  color: #ddd;
+  text-align: center;
+}
+
+#reset {
+  font-size: 24px;
+  display: block;
+  margin: 10px auto;
+  cursor: pointer;
+}
